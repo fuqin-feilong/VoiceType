@@ -1,0 +1,8 @@
+faster-whisper>=1.2
+sounddevice>=0.5
+numpy>=1.26
+PySide6-Essentials>=6.6
+pywin32>=306
+opencc-python-reimplemented>=0.1.7
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.*

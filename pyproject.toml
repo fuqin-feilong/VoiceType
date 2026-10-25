@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voicetype"
+version = "0.4.0"
+description = "Windows 全局语音输入助手（纯本地，中英混合）"
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.2",
+    "sounddevice>=0.5",
+    "numpy>=1.26",
+    "PySide6-Essentials>=6.6",
+    "pywin32>=306",
+    "opencc-python-reimplemented>=0.1.7",
+]
+
+[project.scripts]
+voicetype = "voicetype.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+voicetype = ["assets/*"]
